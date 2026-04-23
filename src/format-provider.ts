@@ -1,11 +1,14 @@
 import * as vscode from "vscode";
+import { PgformFormatRequest } from "./format-request";
 
 export class PgformFormatProvider implements vscode.DocumentFormattingEditProvider {
     provideDocumentFormattingEdits(
-        _document: vscode.TextDocument,
-        _options: vscode.FormattingOptions,
-        _token: vscode.CancellationToken,
+        document: vscode.TextDocument,
+        options: vscode.FormattingOptions,
+        token: vscode.CancellationToken,
     ): Promise<vscode.TextEdit[]> {
-        return Promise.resolve([]);
+        const formatRequest = new PgformFormatRequest(document, options, token);
+
+        return formatRequest.run();
     }
 }
