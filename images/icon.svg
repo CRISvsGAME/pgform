@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img"
+    aria-labelledby="title desc">
+    <title id="title">Pgform - Terminal</title>
+    <desc id="desc">Format PostgreSQL SQL using pgFormatter.</desc>
+    <rect width="512" height="512" rx="112" fill="#101C25" />
+    <rect x="57" y="75" width="398" height="362" rx="42" fill="none" stroke="#344550"
+        stroke-width="6" />
+    <path d="M60 143H452" stroke="#344550" stroke-width="6" />
+    <g fill="#71838D">
+        <circle cx="91" cy="110" r="8" />
+        <circle cx="121" cy="110" r="8" />
+        <circle cx="151" cy="110" r="8" />
+    </g>
+    <g fill="none" stroke="#88F2C4" stroke-width="19" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path
+            d="M154 204C144 188 109 187 100 204C90 223 111 232 128 236C149 242 158 257 147 274C135 290 108 285 98 272" />
+        <path
+            d="M263 233C263 206 250 190 230 190C207 190 195 206 195 233C195 259 209 275 230 275C253 275 263 257 263 233Z" />
+        <path d="M239 258L269 287" />
+        <path d="M306 190V275H353" />
+    </g>
+    <g fill="#88F2C4">
+        <rect x="129" y="317" width="253" height="23" rx="11.5" />
+        <rect x="168" y="360" width="214" height="23" rx="11.5" />
+        <rect x="168" y="399" width="151" height="23" rx="11.5" />
+    </g>
+    <path d="M140 367V414" stroke="#425B60" stroke-width="5" stroke-linecap="round" />
+</svg>
