@@ -13,7 +13,9 @@ export class PgformFormatRequest {
             return Promise.resolve([]);
         }
 
-        const args = this.options.insertSpaces ? ["-X", "-s", this.options.tabSize.toString()] : ["-X", "-T"];
+        const args = this.options.insertSpaces
+            ? ["--no-space-function", "-LXs", this.options.tabSize.toString()]
+            : ["--no-space-function", "-LTX"];
 
         return new Promise((resolve) => {
             const version = this.document.version;

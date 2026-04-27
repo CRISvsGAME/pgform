@@ -2,7 +2,7 @@
     "name": "pgform",
     "displayName": "Pgform",
     "icon": "images/icon.png",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "crisvsgame",
     "description": "Format PostgreSQL SQL using pgFormatter.",
     "categories": [

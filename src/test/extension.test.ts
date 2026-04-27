@@ -10,7 +10,7 @@ suite("Pgform", () => {
         await extension.activate();
 
         const input = "select a,b from public.items where id=1;\n";
-        const expected = "SELECT\n    a,\n    b\nFROM\n    public.items\nWHERE\n    id = 1;\n\n";
+        const expected = "SELECT\n    a,\n    b\nFROM\n    public.items\nWHERE\n    id = 1;\n";
 
         const document = await vscode.workspace.openTextDocument({
             language: "sql",
@@ -46,7 +46,7 @@ suite("Pgform", () => {
         await extension.activate();
 
         const input = "select a,b from public.items where id=1;\n";
-        const expected = "SELECT\n\ta,\n\tb\nFROM\n\tpublic.items\nWHERE\n\tid = 1;\n\n";
+        const expected = "SELECT\n\ta,\n\tb\nFROM\n\tpublic.items\nWHERE\n\tid = 1;\n";
 
         const document = await vscode.workspace.openTextDocument({
             language: "sql",
@@ -81,7 +81,7 @@ suite("Pgform", () => {
 
         await extension.activate();
 
-        const input = "SELECT\n    a,\n    b\nFROM\n    public.items\nWHERE\n    id = 1;\n\n";
+        const input = "SELECT\n    a,\n    b\nFROM\n    public.items\nWHERE\n    id = 1;\n";
 
         const document = await vscode.workspace.openTextDocument({
             language: "sql",
